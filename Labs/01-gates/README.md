@@ -67,10 +67,10 @@ entity gates is
         a_i    			: in  std_logic;         -- Data input
         b_i    			: in  std_logic;         -- Data input
         c_i    			: in  std_logic;         -- Data input
-        f_or_left_o 		: out std_logic;         -- OR LEFT SIDE output function
-        f_or_right_o 		: out std_logic;         -- OR LEFT SIDE output function
-        f_and_left_o		: out std_logic;         -- AND LEFT SIDE output function
-        f_and_right_o		: out std_logic          -- AND RIGHT SIDE output function
+        f_or_left_o 	: out std_logic;         -- OR LEFT SIDE output function
+        f_or_right_o 	: out std_logic;         -- OR LEFT SIDE output function
+        f_and_left_o	: out std_logic;         -- AND LEFT SIDE output function
+        f_and_right_o	: out std_logic          -- AND RIGHT SIDE output function
     );
 end entity gates;
 
