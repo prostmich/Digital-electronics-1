@@ -64,9 +64,9 @@ use ieee.std_logic_1164.all; -- Package for data types and logic operations
 ------------------------------------------------------------------------
 entity gates is
     port(
-        a_i    			: in  std_logic;         -- Data input
-        b_i    			: in  std_logic;         -- Data input
-        c_i    			: in  std_logic;         -- Data input
+        a_i    	        : in  std_logic;         -- Data input
+        b_i    	        : in  std_logic;         -- Data input
+        c_i    	        : in  std_logic;         -- Data input
         f_or_left_o 	: out std_logic;         -- OR LEFT SIDE output function
         f_or_right_o 	: out std_logic;         -- OR LEFT SIDE output function
         f_and_left_o	: out std_logic;         -- AND LEFT SIDE output function
