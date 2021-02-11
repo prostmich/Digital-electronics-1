@@ -30,7 +30,7 @@ entity gates is
         c_i    		: in  std_logic;         -- Data input
         f_o  		: out std_logic;         -- base output function
         f_nand_o 	: out std_logic;         -- NAND output function
-        f_nor_o 	: out std_logic         -- NOR output function
+        f_nor_o 	: out std_logic          -- NOR output function
     );
 end entity gates;
 
@@ -39,9 +39,10 @@ end entity gates;
 ------------------------------------------------------------------------
 architecture dataflow of gates is
 begin		   
-	f_o 		<= (not b_i and a_i) or (not c_i and not b_i);
+    f_o 	<= (not b_i and a_i) or (not c_i and not b_i);
     f_nand_o 	<= not (not (not b_i and a_i) and not(not b_i and not c_i)); 
     f_nor_o 	<= not (b_i or not a_i) or not (c_i or b_i);
+    
 end architecture dataflow;
 ```
 
@@ -66,10 +67,10 @@ entity gates is
         a_i    			: in  std_logic;         -- Data input
         b_i    			: in  std_logic;         -- Data input
         c_i    			: in  std_logic;         -- Data input
-        f_or_left_o 	: out std_logic;         -- OR LEFT SIDE output function
-        f_or_right_o 	: out std_logic;         -- OR LEFT SIDE output function
-        f_and_left_o	: out std_logic;         -- AND LEFT SIDE output function
-        f_and_right_o	: out std_logic          -- AND RIGHT SIDE output function
+        f_or_left_o 		: out std_logic;         -- OR LEFT SIDE output function
+        f_or_right_o 		: out std_logic;         -- OR LEFT SIDE output function
+        f_and_left_o		: out std_logic;         -- AND LEFT SIDE output function
+        f_and_right_o		: out std_logic          -- AND RIGHT SIDE output function
     );
 end entity gates;
 
