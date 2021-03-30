@@ -227,7 +227,7 @@ TODO: dopsat
 ![jk_rst_waveform](./src/jk_rst_waveform.png)
 
 **t_rst waveform**
-![t_rst_waveform](./src/t_rst_waveform.png)
+![t_rst_waveform](https://i.imgur.com/3qZlUrM.png)
 
 ## 4. Shift register 
 ### Image of the driver schematic
