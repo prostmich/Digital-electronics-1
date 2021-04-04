@@ -31,11 +31,8 @@ begin
         if (reset = '1') then       
             s_state <= STOP1;      
             s_cnt   <= c_ZERO;      
-
         elsif (s_en = '1') then
-
             case s_state is
-
                 when STOP1 =>
                     if (s_cnt < c_DELAY_1SEC) then
                         s_cnt <= s_cnt + 1;
